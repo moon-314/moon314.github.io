@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean" rel="stylesheet">
+  <title>sport</title>
+
+</head>
+<style>
+  div {
+    margin: 0 0 10px;
+    padding: 10px 0;
+    color: #2d2c2d;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  body {
+    font-family: Tahoma;
+    margin: 0px;
+    padding: 50px;
+    background: #F2F2F2;
+
+  }
+
+  .logo {
+    position: relative;
+    width: auto;
+    color: white;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-size: 60px;
+    opacity: 0.9;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    background: #fff;
+    overflow: auto;
+    padding: 25px;
+  }
+
+  .content2 {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    margin-top: 30px;
+    background: #fff;
+    overflow: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .shadow {
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px #A9D0F5, 0 0 25px blue, 0 0 5px #81BEF7;
+  }
+
+  /* 메뉴 디자인 */
+
+  ul {
+    position: relative;
+    background: #D8D8D8;
+    width: auto;
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: bold;
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .nav-link {
+    color: #5858FA
+  }
+
+  .nav-link:hover {
+    color: #3A01DF;
+  }
+
+  #top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #5858FA;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  #top:hover {
+    background-color: #555;
+  }
+h2{
+  text-align: center;
+  font-family: Nanum Pen Script;
+}
+
+</style>
+
+<body>
+  <!--ui object -->
+  <div class="logo">
+    <p class="shadow">Sport</p>
+  </div>
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="#Introduce">Introduce</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#IT Service">IT Service</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#Sample">Sample</a>
+    </li>
+  </ul>
+
+  <!--content -->
+  <div class="content">
+    <a id="Introduce"></a>
+    <h2>경성대학교 소프트웨어학과 17학번 문성민</h2>
+    <h2>Favorite thing: 야구, 배구</h2>
+    <h2></h2>
+  </div>
+
+  <div class="content" style="height:700px">
+    <a id="IT Service"></a>
+    <img src="1.png" alt="구단순위" height="250px">
+    <img src="2.gif" alt="움짤" height="250px">
+    <img src="2.png" alt="" width="54%">
+    <img src="3.jpg" alt="구단SNS" height="300px" width="45%">
+
+    <p></p>
+    <h2>여러 스포츠의 구단별 통계 자료뿐만아니라 게시물에 움짤과 영상을 올릴 수 있으며
+      <br>구단 SNS까지 한번에 볼 수 있는 웹페이지를 만들고 싶습니다.</h2>
+  </div>
+
+  <div class="content2">
+    <a id="Sample"></a>
+    <img src="Sample.JPG" alt="sample">
+  </div>
+  <!--//content -->
+
+
+  <!--//ui object -->
+  <button onclick="topFunction()" id="top">Top</button>
+
+  <script>
+    // top 메뉴 생성
+
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("top").style.display = "block"; // 스크롤이 500px이동하면 top메뉴 생성
+      } else {
+        document.getElementById("top").style.display = "none";
+      }
+    }
+
+    function topFunction() { // top으로 이동
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
